@@ -59,9 +59,13 @@
     height: 650px;
   }
   
+  .nav-cont {
+    margin-top: 100px;
+  }
+  
   #navbar-background {
     background-color: #050505;
-    border-top: #B90000 solid 2px;
+    border-bottom: #B90000 solid 2px;
   }
   
   .topnav-container {
@@ -193,7 +197,7 @@
   
   @media (min-width: 950px) {
     .navbar-nav {
-      width: max(1600px, calc(70% + 100px));
+      width: max(2100px, calc(70% + 100px));
     }
   
     .heading-size-change {
