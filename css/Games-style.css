@@ -1,250 +1,260 @@
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B90000;
+  border-radius: 3.5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #710000;
+}
+
+.default-text-box {
+  border: #E7D9D9 solid 2px;
+  border-radius: 10px;
+  background-color: #050505;
+  text-align: center;
+  width: 180px;
+}
+
+.title-font {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  margin-bottom: 6%;
+}
+
+.paragraph-font {
+  font-family: "Oxanium", sans-serif;
+}
+
+.background-textbox-color {
+  background-color: #050505;
+}
+
+.text-color-1 {
+  color: #B90000;
+}
+
+.text-color-2 {
+  color: #E7D9D9;
+}
+
+.accent-color {
+  color: #710000;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url("Photos/Background.png");
+  background-size: auto;
+}
+
+.esports-logo {
+  width: 212px;
+  height: 250px;
+}
+
+.nav-cont {
+  margin-top: 100px;
+}
+
+#navbar-background {
+  background-color: #050505;
+  border-bottom: #B90000 solid 2px;
+}
+
+.topnav-container {
+display: flex;
+flex-flow: row nowrap;
+}
+
+@media (min-width: 1000px) {
+
+ .heading-size-change {
+  font-size: 40px;
+}
+}
+
+@media (min-width: 790.98px) {
+
+.heading-size-change {
+  font-size: 20px;
+}
+}
+
+@media (max-width: 790.98px) {
+  .esports-logo {
+    width: 312px;
+    height: 350px;
   }
-  
-  ::-webkit-scrollbar-track {
-    background: #050505;
+
+.heading-size-change {
+  font-size: 25px;
+}
+}
+
+@media (max-width: 662px) {
+.topnav-container {
+  width: 100%;
+}
+.heading-size-change {
+  font-size: 30px;
+}
+}
+
+@media (min-width: 662px) {
+.topnav {
+  justify-content: center;
+  width: 40%;
+}
+}
+
+.topnav {
+  overflow: hidden;
+  height: 15%;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  top: 0;
+}
+
+.topnav a {
+  color: #B90000;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 20px;
+  display: block;
+}
+
+.skeuomorphic-buttons-navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; 
+  height: 75px;
+  outline-offset: 1px;
+}
+
+.skeuomorphic-buttons-navbar a.skeuomorphic-buttons {
+  display: flex;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 25px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.skeuomorphic-buttons {
+  cursor: pointer;
+  color: #E7D9D9;
+  font-weight: 700;
+  transition: color 1s ease-out;
+}
+
+.skeuomorphic-buttons:hover {
+  cursor: pointer;
+  text-decoration: underline #E7D9D9;
+  color: #710000;
+}
+
+.container-xl {
+border-radius: 20px;
+background-color: #ffffff;
+border: #E7D9D9 ridge 10px;
+}
+
+.top-row {
+background-color: #050505;
+font-size: 70px;
+font-weight: 700;
+}
+
+.content-scrollbar-overflow-container {
+  overflow-y: scroll;
+  overflow: auto;
+  width: 80%;
+}
+
+.navbar-toggler {
+  background-color: #B90000;
+}
+
+.title {
+  margin: 25px;
+  text-decoration: underline #710000;
+  text-underline-offset: 10px;
+}
+
+.navbar-toggler-icon {
+  width: 25px;
+  height: 35px;
+
+}
+
+@media (min-width: 950px) {
+  .navbar-nav {
+    width: max(2100px, calc(70% + 100px));
   }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #B90000;
-    border-radius: 3.5px;
+
+  .heading-size-change {
+    font-size: 24px;
   }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #710000;
+}
+
+@media (max-width: 950px) {
+  .navbar-nav {
+    width: 100%;
   }
-  
+
+  .heading-size-change {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skeuomorphic-buttons-navbar a.skeuomorphic-buttons {
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
   .default-text-box {
     border: #E7D9D9 solid 2px;
     border-radius: 10px;
     background-color: #050505;
     text-align: center;
-    width: 180px;
-  }
-  
-  .title-font {
-    font-family: "Orbitron", sans-serif;
-  }
-  
-  .paragraph-font {
-    font-family: "Oxanium", sans-serif;
-  }
-  
-  .background-textbox-color {
-    background-color: #050505;
-  }
-  
-  .text-color-1 {
-    color: #B90000;
-  }
-  
-  .text-color-2 {
-    color: #E7D9D9;
-  }
-  
-  .accent-color {
-    color: #710000;
-  }
-  
-  body {
     width: 100%;
-    overflow-x: hidden;
-    background-image: url("Photos/Background.png");
-    background-size: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
+}
+
+
+.homepage-position {
+  position: absolute;
+  padding-top: 80px;
+  z-index: 10;
+  width: 100%;
+}
+
+.card {
+  border: none;
+}
+
+.games-1 {
+
+}
+
+.games-2 {
   
-  .esports-logo {
-    width: 612px;
-    height: 650px;
-  }
-  
-  .nav-cont {
-    margin-top: 100px;
-  }
-  
-  #navbar-background {
-    background-color: #050505;
-    border-bottom: #B90000 solid 2px;
-  }
-  
-  .topnav-container {
-  display: flex;
-  flex-flow: row nowrap;
-  }
-  
-  @media (min-width: 1000px) {
-  
-   .heading-size-change {
-    font-size: 40px;
-  }
-  }
-  
-  @media (min-width: 790.98px) {
-  
-  .heading-size-change {
-    font-size: 20px;
-  }
-  }
-  
-  @media (max-width: 790.98px) {
-    .esports-logo {
-      width: 312px;
-      height: 350px;
-    }
-  
-  .heading-size-change {
-    font-size: 25px;
-  }
-  }
-  
-  @media (max-width: 662px) {
-  .topnav-container {
-    width: 100%;
-  }
-  .heading-size-change {
-    font-size: 30px;
-  }
-  }
-  
-  @media (min-width: 662px) {
-  .topnav {
-    justify-content: center;
-    width: 40%;
-  }
-  }
-  
-  .topnav {
-    overflow: hidden;
-    height: 15%;
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    top: 0;
-  }
-  
-  .topnav a {
-    color: #B90000;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 20px;
-    display: block;
-  }
-  
-  .skeuomorphic-buttons-navbar {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center; 
-    height: 75px;
-    outline-offset: 1px;
-  }
-  
-  .skeuomorphic-buttons-navbar a.skeuomorphic-buttons {
-    display: flex;
-    padding: 10px 10px;
-    text-align: center;
-    font-size: 25px;
-    align-items: center;
-    border-radius: 10px;
-  }
-  
-  .skeuomorphic-buttons {
-    cursor: pointer;
-    color: #E7D9D9;
-    font-weight: 700;
-    transition: color 1s ease-out;
-  }
-  
-  .skeuomorphic-buttons:hover {
-    cursor: pointer;
-    text-decoration: underline #E7D9D9;
-    color: #710000;
-  }
-  
-  .container-xl {
-  border-radius: 20px;
-  background-color: #ffffff;
-  border: #E7D9D9 ridge 10px;
-  }
-  
-  .top-row {
-  background-color: #050505;
-  font-size: 70px;
-  font-weight: 700;
-  }
-  
-  .content-scrollbar-overflow-container {
-    overflow-y: scroll;
-    overflow: auto;
-    width: 80%;
-  }
-  
-  .navbar-toggler {
-    background-color: #B90000;
-  }
-  
-  .title {
-    margin: 25px;
-    text-decoration: underline #710000;
-    text-underline-offset: 10px;
-  }
-  
-  .navbar-toggler-icon {
-    width: 25px;
-    height: 35px;
-  
-  }
-  
-  @media (min-width: 950px) {
-    .navbar-nav {
-      width: max(2100px, calc(70% + 100px));
-    }
-  
-    .heading-size-change {
-      font-size: 24px;
-    }
-  }
-  
-  @media (max-width: 950px) {
-    .navbar-nav {
-      width: 100%;
-    }
-  
-    .heading-size-change {
-      font-size: 24px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .skeuomorphic-buttons-navbar a.skeuomorphic-buttons {
-      display: flex;
-      text-align: center;
-      font-size: 25px;
-      align-items: center;
-      border-radius: 10px;
-      width: 100%;
-      justify-content: center;
-    }
-  
-    .default-text-box {
-      border: #E7D9D9 solid 2px;
-      border-radius: 10px;
-      background-color: #050505;
-      text-align: center;
-      width: 100%;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-  }
-  
-  
-  .homepage-position {
-    position: absolute;
-    padding-top: 80px;
-    z-index: 10;
-    width: 100%;
-  }
-  
-  .card {
-    border: none;
-  }
+}
